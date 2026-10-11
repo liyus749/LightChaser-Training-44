@@ -1,22 +1,10 @@
-# ── 密钥：最重要的一行，删了 Key 就会泄露 ──
-.env
-
-# ── C / C++ 编译产物（gcc 生成的，不用交）──
+# 编译产物
 *.exe
 *.o
 *.out
-a.out
 
-# ── Python ──
-__pycache__/
-*.pyc
-.venv/
-venv/
-
-# ── 编辑器 / 系统 ──
+# 编辑器/系统
 .vscode/
-.idea/
-.code-workspace
-.DS_Store
+*.code-workspace
 Thumbs.db
 Desktop.ini
