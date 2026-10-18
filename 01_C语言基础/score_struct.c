@@ -1,13 +1,8 @@
-/*
- * 练习（可选进阶）：成绩单
- * 用一个结构体保存姓名和分数，录入后打印成绩单并统计平均分/最高分/最低分。
- */
 #include <stdio.h>
 
 #define MAX_STUDENTS 100
 #define NAME_LEN 32
 
-// 一个结构体存姓名和分数
 typedef struct {
     char name[NAME_LEN];
     double score;
@@ -25,7 +20,7 @@ int main() {
 
     for (int i = 0; i < n; i++) {
         printf("第 %d 位，输入 姓名 分数：", i + 1);
-        // %31s 限制名字最多 31 个字符，留一位给结束符 '\0'
+        // %31s 限制长度，给结束符 '\0' 留一位
         if (scanf("%31s %lf", list[i].name, &list[i].score) != 2) {
             printf("输入错误\n");
             return 1;
