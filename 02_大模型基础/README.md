@@ -43,7 +43,7 @@ pip install openai python-dotenv
 2. 复制 `.env.example` 为 `.env`，把里面的值换成你的真实 Key：
 
    ```
-   DEEPSEEK_API_KEY=sk-你的真实Key
+   DEEPSEEK_API_KEY=你的真实Key
    ```
 
    > `.env` 已经在仓库根目录的 `.gitignore` 里，不会被提交。
